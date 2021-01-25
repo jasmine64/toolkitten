@@ -3,136 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" media="screen and (max-device-width:1920px)" href="style.css" >
-<!-- Many thanks to everyone for Eduonix for helping us learning.-->
-    
-    <title>Photo gallery</title>
+    <link rel="stylesheet" href="style.css" >
+    <title>CheckerBoard</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="headerTitle">
-            <h2>Photo Gallery</h2>
-            <!-- Monica Szabo -->
-        </div>
-
-        <div class="imageContainer" id="index">
-
-            <div class="oneImage" id="div1">
-                <a class="currImg" id="a1"  onclick="window.open('big1.jpg'); return false;" target = "_blank" href="big1.jpg">
-                    
-                    <img 
-                         src="small1.jpg"
-                         alt="A pair of lions sitting."
-                         onclick="showBigImg();"
-                    >
-                </a>
-               
-            </div>  <!--close oneImage-->
-
-            <div class="oneImage" id="div2">
-                <a class="currImg" id="a2" onclick="window.open('big2.jpg'); return false;" target = "_blank" href="big2.jpg">
-                    
-                    <img 
-                         src="small2.jpg"
-                          alt="A sunny day on a beach in Cancun-Mexic."
-                          >
-                </a>
-                
-            </div>  <!--close oneImage-->
-
-            <div class="oneImage" id="div3">
-                <a class="currImg" id="a3" onclick="window.open('big3.jpg'); return false;" target = "_blank" href="big3.jpg">
-                    
-                    <img 
-                         src="small3.jpg"
-                         alt="Beautiful trees in autumn."
-                         >
-                </a>
-                
-            </div>  <!--close oneImage-->
-
-            <div class="imageContainer">
-
-                <div class="oneImage" id="div4">
-                    <a class="currImg" id="a4" onclick="window.open('big4.jpg'); return false;" target = "_blank" href="big4.jpg">
-                        
-                        <img 
-                             src="small4.jpg"
-                             alt="Green hills in India."
-                             >
-                    </a>
-                   
-                </div>  <!--close oneImage-->
-
-                <div class="oneImage" id="div5"> 
-                    <a class="currImg" id="a5" onclick="window.open('big5.jpg'); return false;" target = "_blank" href="big5.jpg">
-                        
-                        <img 
-                             src="small5.jpg"
-                             alt="Colourful flowers around a lake."
-                             >
-                    </a>
-                    
-                </div>  <!--close oneImage-->
-    
+    <div id = "checkerBoard">
+        
+            <div id ="R1">
+                <div id="C1" class = "col odd"></div>
+                <div id="C2" class = "col even">
+                    <div id = "T1" class = "tile player1" ></div>
+                </div>
+                <div id = "C3" class = " col odd"></div>
+                <div id = "C4" class = "col even">
+                    <div id = "T2" class = "tile player1" ></div>
+                </div>
+                <div id = "C5" class = " col odd"></div>
+                <div id = "C6" class = "col even">
+                    <div id = "T3" class = "tile player1"></div>
+                </div>
+                <div id = "C7" class = "col odd"></div>
+                <div id = "C8" class = "col even">
+                    <div id = "T4" class = "tile player1" ></div>
+                </div>
+            </div>
 
             
-                <div class="oneImage" id="div6">
-                
-                    <a class="currImg" id="a6" onclick="window.open('big6.jpg'); return false;" target = "_blank" href="big6.jpg">
-                        
-                        <img 
-                             src="small6.jpg"
-                             alt="Amazing waterfull."
-                             >
-                    </a>
-    
-                </div>  <!--close one image-->
-           
+            <div id ="R2">
+                <div id = "C9" class = "col even">
+                    <div id = "T5" class = "tile player1"></div>
+                </div>
+                <div id = "C10" class = "col odd"></div>
+                <div id = "C11" class = "col even">
+                    <div id = "T6" class = "tile player1"></div>
+                </div>
+                <div id = "C12" class = "col odd"></div>
+                <div id = "C13" class = "col even">
+                    <div id = "T7" class = "tile player1" ></div>
+                </div>
+                <div id = "C14" class = "col odd"></div>
+                <div id = "C15" class = "col even"> 
+                    <div id = "T8" class = "tile player1" ></div>
+                </div>
+                <div id = "C16" class = "col odd"></div>
+            </div>
 
-            <div class="oneImage" id="div7">
-                <a class="currImg"id="a7" onclick="window.open('big7.jpg'); return false;" target = "_blank" href="big7.jpg">
-                    
-                    <img 
-                         src="small7.jpg"
-                         alt="Nice hut near a country-like road."
-                         >
-                </a>
-                
-            </div>  <!--close oneImage-->
-
-            <div class="oneImage" id="div8">
-                <a class="currImg" id="a8" onclick="window.open('big8.jpg'); return false;" target = "_blank" href="big8.jpg">
-                    
-                    <img 
-                         src="small8.jpg"
-                         alt="Lupin, a flowering plant ."
-                         >
-                </a>
-                
-            </div>  <!--close oneImage-->
-
-           
             
+            <div id ="R3">
+                <div id = "C17" class = "col odd"></div>
+                <div id = "C18" class = "col even">
+                    <div id = "T9" class = "tile player1" ></div>
+                </div>
+                <div id = "C19" class = "col odd"></div>
+                <div id = "C20" class = "col even">
+                    <div id = "T10" class = "tile player1" ></div>
+                </div>
+                <div id = "C21" class = "col odd"></div>
+                <div id = "C22" class = "col even">
+                    <div id = "T11" class = "tile player1" ></div>
+                </div>
+                <div id = "C23" class = "col odd"></div>
+                <div id = "C24" class = "col even">
+                    <div id = "T12" class = "tile player1" ></div>
+                </div>
+                <div></div>
+            </div>
 
-            <div class="oneImage" id="div9">
-                <a class="currImg" id="a9"   onclick="window.open('big9.jpg'); return false;" target = "_blank" href="big9.jpg">
+            
+            <div id ="R4" >
+                <div id = "C25" class = " col even"></div>
+                <div id = "C26" class = "col odd"></div>
+                <div id = "C27" class = "col even"> </div>
+                <div id = "C28" class = "col odd"></div>
+                <div id = "C29" class = "col even"></div>
+                <div id = "C30" class = "col odd"></div>
+                <div id = "C31" class = "col even"></div>
+                <div id = "C32" class = "col odd"></div>
+            </div>
+
+            <div id = "R5">
+                <div id = "C33" class = "col odd"></div>
+                <div id = "C34" class = "col even"></div>
+                <div id = "C35" class = "col odd"></div>
+                <div id = "C36" class = "col even"></div>
+                <div id = "C37" class = "col odd"></div>
+                <div id = "C38" class = "col even"></div>
+                <div id = "C39" class = "col odd"></div>
+                <div id = "C40" class = "col even"></div>
+            </div>
+
+            <div id = "R6">
+                <div id = "C41" class = "col even">
+                    <div id = "T21" class = "tile player2"></div>
+                </div>
+                <div id = "C42" class = "col odd"></div>
+                <div id = "C43" class = "col even"> 
+                    <div id = "T22" class = "tile player2" ></div>
+                </div>
+                <div id = "C44" class = "col odd"></div>
+                <div id = "C45" class = "col even">
+                    <div id = "T23" class = "tile player2" ></div>
+                </div>
+                <div id = "C46" class = "col odd"></div>
+                <div id = "C47" class = "col even">
+                    <div id = "T24" class = "tile player2" ></div>
+                </div>
+                <div id = "C48" class = "col odd"> </div>
+            </div>
+
+            <div id = "R7">
+                <div id = "C49" class = "col odd"></div>
+                <div id = "C50" class = "col even">
+                    <div id = "T25" class = "tile player2"></div>
+                </div>
+                <div id = "C51" class = "col odd"> </div>
+                <div id = "C52" class = "col even">
+                    <div id = "T26" class = "tile player2" ></div>
+                </div>
+                <div id = "C53" class = "col odd"></div>
+                <div id = "C54" class = "col even">
+                    <div id = "T27" class = "tile player2" ></div>
+                </div>
+                <div id = "C55" class = "col odd"></div>
+                <div id = "C56" class = "col even">
+                    <div id = "T28" class = "tile player2" ></div>
+                 </div>
                 
-                    <img 
-                         id="img9"
-                         src="small9.jpg"
-                         alt="Snowed peaks in contrast with rosy flowers and a tree."
-                         >
-                </a>
+            </div>
+
+            <div id = "R8">
+                <div id = "C57" class = "col even">
+                    <div id = "T29" class = "tile player2"></div>
+                </div>
+                <div id = "C58" class = "col odd"></div>
+                <div id = "C59" class = "col even"> 
+                    <div id = "T30" class = "tile player2" ></div>
+                </div>
+                <div id = "C60" class = "col odd"></div>
+                <div id = "C61" class = "col even">
+                    <div id = "T31" class = "tile player2" ></div>
+                </div>
+                <div id = "C62" class = "col odd"></div>
+                <div id = "C63" class = "col even">
+                    <div id = "T32" class = "tile player2" ></div>
+                </div>
+                <div id = "C64" class = "col odd"> </div>
                 
-            </div>  <!--close oneImage-->
+            </div>
 
-        </div>  <!--close imageContainer-->
-
-    </div>  <!--close wrapper--> 
-
-   <script src="steps.js"></script> 
+  </div>
+  <script src="checker.js"></script> 
+    
 </body>
 </html>
-
